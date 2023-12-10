@@ -10,22 +10,125 @@ a:hover {
   color: black;
 }
 
-#position .box {
-  position: relative;
+#exercise .box {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #3882a7;
 }
-#position .box .textbox {
-  width: 500px;
+#exercise .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #1a1a5c;
+  transition: 2s;
 }
-#position .box .minibox {
+#exercise .box:hover .minibox {
   width: 150px;
   height: 150px;
-  color: white;
-  border: 1px solid;
-  background-color: #eb61ee;
-  padding: 10px;
-  margin: 10px;
 }
-#position .box .run {
-  position: fixed;
-  right: 5px;
+#exercise .karo {
+  margin: 50px;
+}
+#exercise .karo .buton {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  background-color: #895e81;
+}
+#exercise .karo:hover .buton {
+  background-color: #3d2d3b;
+}
+@media screen and (max-width: 800px) {
+  #exercise .karo .buton {
+    width: 100px;
+    height: 100px;
+    background-color: #6d43c7;
+  }
+}
+@media screen and (max-width: 500px) {
+  #exercise .karo .buton {
+    width: 80px;
+    height: 80px;
+    background-color: #451414;
+  }
+}
+#exercise .circle {
+  margin: 50px;
+}
+#exercise .circle .evo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #aa700c;
+  width: 200px;
+  height: 200px;
+  transition: 2s;
+}
+#exercise .circle:hover .evo {
+  border-radius: 0px;
+}
+@media screen and (max-width: 800px) {
+  #exercise .circle .evo {
+    width: 80px;
+    height: 80px;
+    background-color: #edc37a;
+  }
+}
+#exercise h1 {
+  color: white;
+  font-size: 25px;
+}
+
+#bigbox {
+  margin: 50px;
+}
+#bigbox .box {
+  margin: 60px;
+  position: relative;
+}
+#bigbox .box .bluebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 300px;
+  height: 200px;
+  background-color: #3a6a92;
+}
+#bigbox .box .bluebox h1 {
+  color: white;
+  font-size: 30px;
+}
+#bigbox .box .greenbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 300px;
+  height: 200px;
+  background-color: #57925b;
+}
+#bigbox .box .greenbox h1 {
+  color: white;
+  font-size: 30px;
+}
+#bigbox .run {
+  position: absolute;
+  left: 300px;
+  bottom: -20px;
+}
+#bigbox .side {
+  position: absolute;
+  left: 300px;
+  top: 200px;
 }/*# sourceMappingURL=style.css.map */

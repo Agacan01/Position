@@ -1,0 +1,67 @@
+#exercise
+    .box
+        margin: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 200px
+        height: 200px
+        background-color: #3882a7
+        .minibox
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100px
+            height: 100px
+            background-color: #1a1a5c
+            transition: 2s
+        &:hover
+            .minibox
+                width: 150px
+                height: 150px
+    .karo
+        margin: 50px
+        .buton
+            padding: 5px
+            cursor: pointer
+            display: flex
+            justify-content: center
+            width: 200px
+            height: 100px
+            background-color: #895e81
+        &:hover
+            .buton
+                background-color: #3d2d3b
+        @media screen and ( max-width:800px  )
+            .buton
+                width: 100px
+                height: 100px
+                background-color: #6d43c7
+        @media screen and ( max-width:500px  )
+            .buton
+                width: 80px
+                height: 80px
+                background-color: #451414
+
+    .circle
+        margin: 50px
+        .evo
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 100px
+            background-color: #aa700c
+            width: 200px
+            height: 200px
+            transition: 2s
+        &:hover
+            .evo
+                border-radius: 0px
+        @media screen and ( max-width:800px  )
+            .evo
+                width: 80px
+                height: 80px
+                background-color: #edc37a
+    h1
+        color: #ffff
+        font-size: 25px
