@@ -26,7 +26,7 @@ a:hover {
   width: 100px;
   height: 100px;
   background-color: #1a1a5c;
-  transition: 2s;
+  transition: 1s;
 }
 #exercise .box:hover .minibox {
   width: 150px;
